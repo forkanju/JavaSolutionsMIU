@@ -31,9 +31,15 @@ public class PorcupineNumber {
 	    static int isPrime(int number) {
 	        int isPrime = 0;
 	        if (number > 1) {
+<<<<<<< HEAD
 	            for (int i = 2; i <= number/2; i++) { //There is no number that can be completely divided by more
 	                if (number % i == 0) {			  // than half of the number itself. We need to loop through two 
 	                    isPrime = 0;				  //to the number itself divided by two (number/2).
+=======
+	            for (int i = 2; i*2 <= number; i++) {
+	                if (number % i == 0) {
+	                    isPrime = 0;
+>>>>>>> 8e0da204efeea7576464f6309d936f8cd1a51025
 	                    break;
 	                } 
 	            }

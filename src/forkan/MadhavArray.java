@@ -13,7 +13,11 @@ public class MadhavArray {
 	
 	  static int isMadhavArray(int[] a) {
 	        int isMadhav = 1;
+<<<<<<< HEAD
 	        int isMadhavLength = 0; //mentioned in question this condition need to meet
+=======
+	        int isMadhavLength = 0;
+>>>>>>> 8e0da204efeea7576464f6309d936f8cd1a51025
 
 	        if (a.length < 3) return 0;
 
@@ -24,18 +28,29 @@ public class MadhavArray {
 	        }
 	        if (isMadhavLength == 0) return 0;
 
+<<<<<<< HEAD
 	        int startIndex = 1; //to start calculating from start for next chunk
 	        int round = 1; //to increase array item one by one
 	        int endIndex = startIndex + round; //length of new chunk
 	        int firstValue = a[0]; //to check with first item
+=======
+	        int startIndex = 1;
+	        int round = 1;
+	        int endIndex = startIndex + round;
+	        int firstValue = a[0];
+>>>>>>> 8e0da204efeea7576464f6309d936f8cd1a51025
 
 	        while (isMadhav == 1 && endIndex <= a.length) {
 	            int sum = 0;
 	            for (int i = startIndex; i <= endIndex; i++) {
 	                sum += a[i];
+<<<<<<< HEAD
 	               
 	            }
 	            System.out.println("sum = "+ sum);
+=======
+	            }
+>>>>>>> 8e0da204efeea7576464f6309d936f8cd1a51025
 	            if (firstValue != sum)
 	                isMadhav = 0;
 

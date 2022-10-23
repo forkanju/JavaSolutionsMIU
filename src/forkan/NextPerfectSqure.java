@@ -7,7 +7,11 @@ public class NextPerfectSqure {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+<<<<<<< HEAD
 		 int number = -5;
+=======
+		 int number = 5;
+>>>>>>> 8e0da204efeea7576464f6309d936f8cd1a51025
 		 int nextPerfectSquare = 0;
 		 
 		   if (number >= 0) {

@@ -19,8 +19,13 @@ public class SquarePair {
 				if(arr[i] > 0 && arr[j] > 0 && arr[i]+arr[j] == (int)arr[i]+arr[j] 
 						&& arr[i] < arr[j] && Math.sqrt(arr[i]+arr[j]) == (int)(Math.sqrt(arr[i]+arr[j]))){
 					sqrPair++;
+<<<<<<< HEAD
 				}
 			
+=======
+					
+				}
+>>>>>>> 8e0da204efeea7576464f6309d936f8cd1a51025
 			}
 		}
 		

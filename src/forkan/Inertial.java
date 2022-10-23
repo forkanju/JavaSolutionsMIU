@@ -4,7 +4,11 @@ public class Inertial {
 	
 	public static void main(String[] args) {
 
+<<<<<<< HEAD
 	System.out.println(isInertial(new int[]{1,2}));
+=======
+	System.out.println(isInertial(new int[]{1,1,1,1,1,1,2}));
+>>>>>>> 8e0da204efeea7576464f6309d936f8cd1a51025
 	
 	}
 	
@@ -28,9 +32,17 @@ public class Inertial {
 		
 		
 		//b. the maximum value in the array is even [second condition]
+<<<<<<< HEAD
 		for(int i = 0; i < arr.length; i++) {
 			if(arr[i] > maxnumber) {
 				maxnumber = arr[i];
+=======
+		for(int i = 1; i < arr.length; i++) {
+			for(int j = 0; j < i; j++) {
+				if(arr[i] > arr[j]) {
+					if(arr[i] > maxnumber) maxnumber = arr[i];
+				}
+>>>>>>> 8e0da204efeea7576464f6309d936f8cd1a51025
 			}
 		}
 		
@@ -47,7 +59,11 @@ public class Inertial {
 		int oddIdx = 0;
 		int evenIdx = 0;
 		
+<<<<<<< HEAD
 		//storing value to the new declared arrays
+=======
+		//storing value to the new decalred arrays
+>>>>>>> 8e0da204efeea7576464f6309d936f8cd1a51025
 		for(int i = 0; i < arr.length; i++) {
 			if(arr[i] % 2 == 0 || arr[i] % 2 == -0) {
 				evenItems[evenIdx] = arr[i];
@@ -61,7 +77,10 @@ public class Inertial {
 		
 		for(int i = 0; i < oddItems.length; i++) {
 			for(int j = 0; j < evenItems.length; j++) {
+<<<<<<< HEAD
 				System.out.println("max = "+maxnumber +" evenItems = "+evenItems[j]);
+=======
+>>>>>>> 8e0da204efeea7576464f6309d936f8cd1a51025
 				if(evenItems[j] != maxnumber) {
 					if(oddItems[i] < evenItems[j]) {
 						isInertial = 0;
@@ -93,8 +112,13 @@ However, {12,11,4,9,2,3,10} is not inertial because it fails condition (c), i.e.
 in the array.
 
 Write a function called isInertial that accepts an integer array and returns 1 if the array
+<<<<<<< HEAD
 is inertial; otherwise, it returns 0.
 If you are programming in Java or C#, the function signature is
+=======
+is inertial; otherwise it returns 0.
+If you are programing in Java or C#, the function signature is
+>>>>>>> 8e0da204efeea7576464f6309d936f8cd1a51025
 int isInertial(int[] a)
 
 Some other examples:
